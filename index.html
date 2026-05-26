@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Calculator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="container">
+    <section class="intro">
+      <h1>CALCULATOR</h1>
+      <p class="lead">It takes a little skill to create a calculator with basic mathematical functionalities using CSS, HTML, and JavaScript. Use the keypad to enter numbers and operators, then press <strong>=</strong> to evaluate.</p>
+      <p class="demo">For Demo <a href="#calculator">Click</a></p>
+    </section>
+
+    <section id="calculator" class="calc-card" aria-label="Calculator" aria-describedby="calc-instructions">
+      <p id="calc-instructions" class="sr-only">Calculator keypad: use mouse or keyboard. Numbers, plus, minus, multiply, divide, percent, clear, backspace, and enter for equals.</p>
+      <div class="display" id="display" role="status" aria-live="polite" aria-atomic="true">0</div>
+      <div class="keys">
+        <button class="btn op" data-action="clear">C</button>
+        <button class="btn op" data-action="back">←</button>
+        <button class="btn op" data-action="percent">%</button>
+        <button class="btn op" data-action="divide">÷</button>
+
+        <button class="btn num" data-num="7">7</button>
+        <button class="btn num" data-num="8">8</button>
+        <button class="btn num" data-num="9">9</button>
+        <button class="btn op" data-action="multiply">×</button>
+
+        <button class="btn num" data-num="4">4</button>
+        <button class="btn num" data-num="5">5</button>
+        <button class="btn num" data-num="6">6</button>
+        <button class="btn op" data-action="subtract">−</button>
+
+        <button class="btn num" data-num="1">1</button>
+        <button class="btn num" data-num="2">2</button>
+        <button class="btn num" data-num="3">3</button>
+        <button class="btn op" data-action="add">+</button>
+
+        <button class="btn num zero" data-num="0">0</button>
+        <button class="btn num" data-num=".">.</button>
+        <button class="btn eq" data-action="equals">=</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
