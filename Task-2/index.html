@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tribute Page</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(135deg, #0f0f0f, #1a1a1a);
+      color: #fff;
+      line-height: 1.6;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background: url('https://images.unsplash.com/photo-1518770660439-4636190af475') center/cover no-repeat;
+      position: relative;
+      text-align: center;
+    }
+
+    header::after {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.7);
+      top: 0;
+      left: 0;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      z-index: 1;
+      letter-spacing: 2px;
+    }
+
+    header p {
+      z-index: 1;
+      opacity: 0.8;
+      margin-top: 10px;
+    }
+
+    .quote {
+      background: #111;
+      padding: 60px 20px;
+      text-align: center;
+      font-size: 1.3rem;
+      font-style: italic;
+      color: #ccc;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 50px 20px;
+    }
+
+    .bio {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 30px;
+    }
+
+    .bio img {
+      width: 300px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+
+    .bio img:hover {
+      transform: scale(1.05);
+    }
+
+    .bio-text {
+      flex: 1;
+    }
+
+    .bio-text h2 {
+      margin-bottom: 15px;
+      font-size: 2rem;
+    }
+
+    .bio-text p {
+      color: #ccc;
+      margin-bottom: 10px;
+    }
+
+    .qualities {
+      margin-top: 50px;
+    }
+
+    .qualities h2 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.05);
+      padding: 20px;
+      border-radius: 10px;
+      backdrop-filter: blur(10px);
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      background: rgba(255,255,255,0.1);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      color: #777;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .bio {
+        flex-direction: column;
+        text-align: center;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- HERO SECTION -->
+  <header>
+    <h1>Elon Musk</h1>
+    <p>1971 - Present</p>
+  </header>
+
+  <!-- QUOTE -->
+  <section class="quote">
+    "When something is important enough, you do it even if the odds are not in your favor."
+  </section>
+
+  <!-- BIO -->
+  <section class="container">
+    <div class="bio">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/e/ed/Elon_Musk_Royal_Society.jpg" alt="Elon Musk">
+
+      <div class="bio-text">
+        <h2>Why I Admire Him</h2>
+        <p>
+          Elon Musk is not just an entrepreneur, he is a visionary who constantly pushes the boundaries of what humanity can achieve. His work spans across industries like electric vehicles, space exploration, artificial intelligence, and renewable energy.
+        </p>
+        <p>
+          What inspires me the most is his fearless mindset — taking risks that most people would avoid and still turning them into global innovations.
+        </p>
+        <p>
+          He represents persistence, creativity, and a never-give-up attitude, which motivates me to think bigger and aim higher.
+        </p>
+      </div>
+    </div>
+
+    <!-- QUALITIES -->
+    <div class="qualities">
+      <h2>Qualities I Admire</h2>
+
+      <div class="cards">
+        <div class="card">
+          <h3>🚀 Visionary Thinking</h3>
+          <p>He thinks decades ahead and builds for the future.</p>
+        </div>
+
+        <div class="card">
+          <h3>🔥 Risk Taking</h3>
+          <p>He invests everything into ideas he believes in.</p>
+        </div>
+
+        <div class="card">
+          <h3>💡 Innovation</h3>
+          <p>Constantly creating groundbreaking technology.</p>
+        </div>
+
+        <div class="card">
+          <h3>💪 Persistence</h3>
+          <p>Never gives up, even after repeated failures.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    Made with by Manav
+  </footer>
+
+</body>
+</html>
